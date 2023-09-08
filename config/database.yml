@@ -39,7 +39,7 @@ development:
   username: root
   password:
   host: localhost
-  database: ajax_app_rails7_development
+  database: protospace_development
 
 test:
   <<: *default
