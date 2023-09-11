@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
   def show
-    user = User.find(params[:id])
+    @user = User.find(params[:id])
     @name = user.name
     @profile = user.profile
     @occupation = user.occupation
