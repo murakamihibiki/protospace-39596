@@ -12,3 +12,12 @@ class User < ApplicationRecord
   has_many :prototypes
   has_many :comments
 end
+
+def show
+  @user = User.find(params[:id])
+  @prototypes = @user.prototypes
+  @name = @user.name
+  @profile = @user.profile
+  @occupation = @user.occupation
+  @position = @user.position
+end
